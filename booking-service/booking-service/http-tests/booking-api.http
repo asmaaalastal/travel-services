@@ -1,0 +1,37 @@
+### Get all bookings
+GET http://localhost:8080/api/bookings
+
+### Get booking by ID
+GET http://localhost:8080/api/bookings/u7
+
+### Create new booking
+POST http://localhost:8080/api/bookings
+Content-Type: application/json
+
+{
+  "userId": "u7",
+  "flightId": "f4",
+  "bookingDate": "2025-06-24T13:30:00",
+  "status": "CONFIRMED",
+  "seatNumber": "A7",
+  "ticketNumber": "TCKT007",
+  "refunded": false
+}
+
+
+### Update existing booking
+PUT http://localhost:8080/api/bookings/b1
+Content-Type: application/json
+
+{
+  "userId": "u1",
+  "flightId": "f1",
+  "bookingDate": "2025-06-24T13:10:00",
+  "status": "CANCELED",
+  "seatNumber": "A1",
+  "ticketNumber": "TCKT001",
+  "refunded": true
+}
+
+### Delete booking by ID
+DELETE http://localhost:8080/api/bookings/b1
