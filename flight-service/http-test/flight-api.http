@@ -1,12 +1,12 @@
 ### Get all flights
-GET http://localhost:8082/api/flights
+GET http://localhost:8088/api/flights
 
 ### Get flight by ID
-GET http://localhost:8082/api/flights/f1
+GET http://localhost:8088/api/flights/f1
 
 
 ### Create new flight
-POST http://localhost:8082/api/flights
+POST http://localhost:8088/api/flights
 Content-Type: application/json
 
 {
@@ -23,20 +23,20 @@ Content-Type: application/json
 
 
 ### Update existing flight
-PUT http://localhost:8082/api/flights/f7
+PUT http://localhost:8088/api/flights/f1
 Content-Type: application/json
 
 {
-  "flightId": "f7",
+  "flightId": "f1",
   "fromCity": "Gaza",
   "toCity": "Amman",
   "departureTime": "2025-07-01T11:00:00",
   "arrivalTime": "2025-07-01T13:00:00",
-  "price": 160.00,
+  "price": 200.00,
   "availableSeats": 25,
   "airlineName": "PalAir",
   "flightCode": "PL123"
 }
 
 ### Delete flight by ID
-DELETE http://localhost:8082/api/flights/f7
+DELETE http://localhost:8088/api/flights/f1

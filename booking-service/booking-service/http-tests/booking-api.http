@@ -1,15 +1,16 @@
 ### Get all bookings
-GET http://localhost:8080/api/bookings
+GET http://localhost:8088/api/bookings
 
 ### Get booking by ID
-GET http://localhost:8080/api/bookings/u7
+GET http://localhost:8088/api/bookings/u7
 
 ### Create new booking
-POST http://localhost:8080/api/bookings
+POST http://localhost:8088/api/bookings
 Content-Type: application/json
 
 {
   "userId": "u7",
+  "bookingId": "b8",
   "flightId": "f4",
   "bookingDate": "2025-06-24T13:30:00",
   "status": "CONFIRMED",
@@ -20,11 +21,12 @@ Content-Type: application/json
 
 
 ### Update existing booking
-PUT http://localhost:8080/api/bookings/b1
+PUT http://localhost:8088/api/bookings/b8
 Content-Type: application/json
 
 {
   "userId": "u1",
+  "bookingId": "b8",
   "flightId": "f1",
   "bookingDate": "2025-06-24T13:10:00",
   "status": "CANCELED",
@@ -34,4 +36,4 @@ Content-Type: application/json
 }
 
 ### Delete booking by ID
-DELETE http://localhost:8080/api/bookings/b1
+DELETE http://localhost:8088/api/bookings/b2
